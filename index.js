@@ -43,3 +43,10 @@ var server = app.listen(8081, function () {
    
    console.log("Example app listening at http://%s:%s", host, port);
 })
+
+//1st feature updated
+app.get('/', function (req, res) {
+    console.log("Got a GET request for the homepage");
+    const userCount = 10;
+    res.send(`Hello GET. Users are: ${userCount}`);
+ })
