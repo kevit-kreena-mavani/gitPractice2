@@ -44,9 +44,16 @@ var server = app.listen(8081, function () {
    console.log("Example app listening at http://%s:%s", host, port);
 })
 
+<<<<<<< HEAD
 //1st feature updated
 app.get('/', function (req, res) {
     console.log("Got a GET request for the homepage");
     const userCount = 10;
+=======
+//second feature updated
+app.get('/', function (req, res) {
+    console.log("Got a GET request for the homepage");
+    const userCount = Math.ceil(Math.random() * 100);
+>>>>>>> feature2
     res.send(`Hello GET. Users are: ${userCount}`);
  })
